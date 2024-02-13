@@ -1,0 +1,1 @@
+ssh -i "vockey_2.pem" ec2-54-144-95-52.compute-1.amazonaws.com

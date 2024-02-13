@@ -1,0 +1,2 @@
+aws ec2 start-instances --instance-ids i-01e7d569224176aba
+#ec2-user@ec2-100-26-51-79.compute-1.amazonaws.com

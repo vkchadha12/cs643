@@ -1,0 +1,3 @@
+aws s3api create-bucket \
+    --bucket njit.cs643.vc35.test2\
+    --region us-east-1

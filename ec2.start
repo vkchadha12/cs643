@@ -1,1 +1,1 @@
-aws ec2 run-instances --image-id ami-0277155c3f0ab2930 --count 1 --instance-type t2.micro --key-name vockey --security-group-ids sg-0f20a427de47d7e56
+aws ec2 run-instances --image-id ami-0277155c3f0ab2930 --count 1 --instance-type t2.micro --key-name vockey_2 --security-group-ids sg-0f20a427de47d7e56
