@@ -1,6 +1,7 @@
-aws/sqs/helper/SendSqsMessages.class
 Main.class
 aws/s3/helper/GetObjectImage.class
-aws/classifier/RecognizeCar.class
 aws/s3/helper/ListObjects.class
+aws/sqs/helper/SendSqsMessages.class
+aws/classifier/RecognizeCar.class
+fileHelper/FileOperation.class
 aws/sqs/helper/RetrieveSqsMessages.class

@@ -5,24 +5,25 @@ import software.amazon.awssdk.services.sqs.SqsClient;
 import software.amazon.awssdk.services.sqs.endpoints.internal.Value;
 import software.amazon.awssdk.services.sqs.model.*;
 import java.util.List;
+import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 
 public class SendSqsMessages {
-            //+ new Date().getTime();
-
-    public Boolean send(SqsClient sqs , String QUEUE_NAME, String imageName) {
+    public Boolean send(SqsClient sqs , String QUEUE_NAME, String imageName , String messageGroupId) {
         //final AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
-
+        SqsQueueManager sqsQueueManager = new SqsQueueManager();
+        sqsQueueManager.getQueueURL(sqs , QUEUE_NAME);
+        String uniqueID = UUID.randomUUID().toString();
         //SqsClient sqsClient = SqsClient.create();
         try {
-            // snippet-start:[sqs.java2.sqs_example.send__multiple_messages]
-            SendMessageBatchRequest sendMessageBatchRequest = SendMessageBatchRequest.builder()
+            SendMessageRequest builder = SendMessageRequest.builder()
                     .queueUrl(QUEUE_NAME)
-                    .entries(SendMessageBatchRequestEntry.builder().id("1").messageBody(imageName).delaySeconds(10).build())
+                    .messageBody(imageName)
+                    .messageGroupId(messageGroupId)
+                    .messageDeduplicationId(uniqueID)
                     .build();
-            sqs.sendMessageBatch(sendMessageBatchRequest);
-            System.out.println(sendMessageBatchRequest);
-            // snippet-end:[sqs.java2.sqs_example.send__multiple_messages]
+            sqs.sendMessage(builder);
+            System.out.println(builder);
 
         } catch (SqsException e) {
             System.err.println(e.awsErrorDetails().errorMessage());

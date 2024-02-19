@@ -41,13 +41,6 @@ public class GetObjectImage {
             byte[] data = objectBytes.asByteArray();
             imageMap.put(keyName, data);
 
-            // Write the data to a local file.
-//            File myFile = new File(path);
-//            OutputStream os = new FileOutputStream(myFile);
-//            os.write(data);
-//            System.out.println("Successfully obtained bytes from an S3 object");
-//            os.close();
-
         //} //catch (IOException ex) {
            // ex.printStackTrace();
         } catch (S3Exception e) {
