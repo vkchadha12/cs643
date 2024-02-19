@@ -1,7 +1,0 @@
-ImageFileName: Image Text 
-1.jpg:  [ $ BR8167;$;BR8167;]  
-2.jpg:  [ NO IMAGE Text Found ]  
-4.jpg:  [ YHI9 OTZ;YHI9;OTZ;]  
-5.jpg:  [ NO IMAGE Text Found ]  
-6.jpg:  [ NO IMAGE Text Found ]  
-7.jpg:  [ Lamborghini;LP 610 LB;Lamborghini;LP;610 LB;]  
