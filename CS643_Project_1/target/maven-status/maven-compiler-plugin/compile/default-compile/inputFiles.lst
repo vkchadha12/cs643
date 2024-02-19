@@ -5,4 +5,6 @@
 /Users/vishalchadha/IdeaProjects/CS643_Project_1/src/main/java/aws/classifier/RecognizeCar.java
 /Users/vishalchadha/IdeaProjects/CS643_Project_1/src/main/java/Main.java
 /Users/vishalchadha/IdeaProjects/CS643_Project_1/src/main/java/aws/sqs/helper/SendSqsMessages.java
+/Users/vishalchadha/IdeaProjects/CS643_Project_1/src/main/java/config/CS643_Config.java
 /Users/vishalchadha/IdeaProjects/CS643_Project_1/src/main/java/aws/sqs/helper/RetrieveSqsMessages.java
+/Users/vishalchadha/IdeaProjects/CS643_Project_1/src/main/java/config/ApplicationConfig.java

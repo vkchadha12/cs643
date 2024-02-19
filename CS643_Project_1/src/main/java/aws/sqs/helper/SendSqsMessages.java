@@ -10,11 +10,9 @@ import java.util.concurrent.ExecutionException;
 
 public class SendSqsMessages {
     public Boolean send(SqsClient sqs , String QUEUE_NAME, String imageName , String messageGroupId) {
-        //final AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
         SqsQueueManager sqsQueueManager = new SqsQueueManager();
         sqsQueueManager.getQueueURL(sqs , QUEUE_NAME);
         String uniqueID = UUID.randomUUID().toString();
-        //SqsClient sqsClient = SqsClient.create();
         try {
             SendMessageRequest builder = SendMessageRequest.builder()
                     .queueUrl(QUEUE_NAME)

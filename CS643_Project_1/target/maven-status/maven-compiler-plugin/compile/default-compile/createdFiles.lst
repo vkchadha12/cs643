@@ -1,8 +1,10 @@
 Main.class
+config/CS643_Config.class
 aws/s3/helper/GetObjectImage.class
 aws/s3/helper/ListObjects.class
 aws/sqs/helper/SqsQueueManager.class
 aws/sqs/helper/SendSqsMessages.class
+config/ApplicationConfig.class
 aws/classifier/RecognizeCar.class
 fileHelper/FileOperation.class
 aws/sqs/helper/RetrieveSqsMessages.class
