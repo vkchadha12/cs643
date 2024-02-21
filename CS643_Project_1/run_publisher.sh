@@ -1,1 +1,1 @@
-java -cp target/project1-1.0-SNAPSHOT.jar Main publisher
+java -jar target/com.njit.cs643.project1-1.0-SNAPSHOT-jar-with-dependencies.jar publisher config.json

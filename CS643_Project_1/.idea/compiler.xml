@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CS643_Project_1" />
+        <module name="com.njit.cs643.project1" />
       </profile>
     </annotationProcessing>
   </component>

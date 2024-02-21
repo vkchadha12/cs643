@@ -1,0 +1,7 @@
+{
+    "AWS_QUEUE_NAME" : "vc35_queue_1.fifo",
+    "AWS_S3_BUCKET" : "cs643-njit-project1",
+    "AWS_DEFAULT_REGION" :"Region.US_EAST_1",
+    "OUTPUT_FILE" : "output.txt",
+    "THRESHOLD" : 80.0
+}
