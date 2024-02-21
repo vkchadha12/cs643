@@ -73,7 +73,7 @@ Application runs in 2 mode publisher mode & receive mode
 on first instance "i-0e942fb0ddc723789" 
 run in publisher mode using the following scripts. 
 
-$ksh -x run_publisher.sh
+$ksh -x CS643_Project_1/run_publisher.sh
 java -jar target/com.njit.cs643.project1-1.0-SNAPSHOT-jar-with-dependencies.jar publisher config.json
 
 In this mode the application will read the images from the s3 bucket and classify the images of car and publish to the queue define on QUEUE
@@ -82,7 +82,7 @@ on second  instance "i-0519149bc27b26646"
 
 Run the application in receiver mode 
 
-$ksh -x run_receiver.sh
+$ksh -x CS643_Project_1/run_receiver.sh
 java -jar target/com.njit.cs643.project1-1.0-SNAPSHOT-jar-with-dependencies.jar receiver config.json
 
 In this mode the application will read the images from the queue which are cars , read the text on them
